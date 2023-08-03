@@ -1,0 +1,747 @@
+/*     ---   RESETS   ---     */
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0; 
+    padding: 0;
+}
+nav{
+    margin: 0;
+}
+footer{
+    margin: 0;
+    padding: 0;
+}
+a,
+a:active,
+a:visited,
+a:hover{
+    text-decoration: none;
+}
+.footercol,
+.footercol a,
+.footercol a:visited,
+.footercol a:hover,
+.footercol a:active{
+    text-decoration: none;
+}
+
+/*    ---   GLOBALS   ---    */
+
+@font-face {
+    font-family: 'QS_Bold';
+    src: url("../fonts/Quicksand-Bold.ttf");
+}
+@font-face {
+    font-family: 'QS_Regular';
+    src: url("../fonts/Quicksand-Regular.ttf");
+}
+nav{
+    padding-bottom: 5%;
+    margin-bottom: 0;
+    height: 5rem;
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 0fr 1fr 2fr;
+    grid-template-rows: 100%;
+    border-radius: 0.5rem;
+    z-index: 1001;
+}
+
+.imgtitle{
+    text-align: center;
+    width: 3rem;
+    height: 3rem;
+}
+
+.jkuisinebrand{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.flag{
+    width: 30px; 
+}
+
+.navigationbar{
+    align-items: row;
+}
+
+.iloveburgers{
+    display: none;
+}
+
+.menutitles{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menutitles a{
+    color: #7a1600;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: 0.1s;
+    font-family: 'QS_Bold', sans-serif;
+    font-size: larger;
+    transition: all 0.5s ease;
+}
+.menutitles a:hover{
+    color: #dd6a51;
+    transition: all 0.5s ease;
+}
+
+.ham{
+    width: 50;
+    height: 50;
+    border-radius: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.bur{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.ger{
+    width: 20px;
+    height: 3px;
+    border-radius: 3px;
+    background: #7a1600;
+    transition: 0.25s;
+}
+
+.q{
+    transform-origin: 0 0;
+}
+
+.e{
+    transform-origin: 0 100%;
+}
+
+.q.a{
+    transform: rotate(46.5deg) translate(0, -2px);
+    width: 28px;
+}
+
+.w.b{
+    opacity: 0;
+    transform: scale(0);
+}
+
+.e.c{
+    transform: rotate(-45deg) translate(0.5px, 1.5px);
+    width: 28px;
+}
+
+ul{
+    list-style: none;
+}
+.pagebody{
+    margin: 3% 0 10% 0;
+}
+
+.hero-block{
+    height: 75%;
+    justify-content: center;
+}
+.bubble{
+    max-width: 362px;
+    padding: 5px 15px;
+    color: white;
+    background-color: black;
+    border-radius: 100px;
+}
+.enbubble{
+    max-width: 335px;
+    padding: 5px 15px;
+    color: white;
+    background-color: black;
+    border-radius: 100px;
+}
+.hero-img{  
+    height: 100vh;  
+    width: 100%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.25)), url("../imgs/download_hero.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.hero-svg{
+    display: none;
+    position: absolute;
+    z-index: 0;
+}
+.hero-title{
+    font-family: QS_Bold;
+    font-size: calc(40px + (60 - 40) * ((100vw - 320px) / (1140 - 320)));
+}
+.subtitle{
+    font-family: QS_Bold;
+}
+h1{
+    font-family: QS_Bold;
+    font-size: calc(26px + (32 - 26) * ((100vw - 320px) / (1140 - 320)));
+}
+h2{
+    font-family: QS_Bold;
+    font-size: calc(22px + (30 - 22) * ((100vw - 320px) / (1140 - 320)));
+}
+p{
+    font-family: QS_Regular;
+    font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1140 - 320)));
+}
+.hero-buttons{
+    display: flex;
+    justify-content: center;
+}
+.cv-text{
+    font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1500 - 320)));
+    color: black;
+}
+.github-text{
+    font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1500 - 320)));
+    color: black;
+}
+.download-cv, .github{
+    align-self: center;
+    margin-top: 100px;
+    display: flex;
+    font-family: 'QS_Bold', sans-serif;
+    margin: 0 10px;
+}
+.download-cv-div, .download-github-div{
+    transition: 0.5s;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: none;
+    border: 5px solid whitesmoke; 
+    border-radius: 100px;
+}
+.download-github-div{
+    background-color: whitesmoke;
+}
+.cv-shadow:hover{
+    box-shadow: lightblue 3px 3px 3px;
+}
+.download-cv-div:hover{
+    text-shadow: whitesmoke 1px 1px 1px;
+    box-shadow: #dd6a51 3px 3px 3px;
+    transition: 0.5s;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: whitesmoke;
+    background-color: whitesmoke;
+    border: 5px solid whitesmoke; 
+}
+.download-github-div:hover{
+    text-shadow: #ffd9d0 1px 1px 1px;
+    box-shadow: #dd6a51 3px 3px 3px;
+    transition: 0.5s;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #ffd9d0;
+    background-color: #ffd9d0;
+    border: 5px solid #ffd9d0; 
+}
+.in-dev{
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 25px;
+    border: 5px solid orange;
+    border-radius: 25px;
+}
+
+.pagebody{
+    background: rgb(255, 255, 255, 0.9);
+}
+.hero-last-receipt{
+    height: 50vh;
+    padding: 0 10vw;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9)), url("../receipt_images/poisson_sauce_tomate.jpg");
+}
+
+.section{
+    margin: 25px 0;
+    text-align: center;
+}
+.my-portfolio, .my-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(90deg, white, white, rgb(234, 250, 255), white, white);
+}
+.my-portfolio, .my-passion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.jkeys-div{
+    transition: 0.5s;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: darkgreen;
+    border: 5px solid darkgreen; 
+    border-radius: 25px;
+}
+.jkeys-div:hover{
+    text-shadow: rgb(255, 205, 104) 1px 1px 1px;
+    box-shadow: rgb(255, 205, 104) 3px 3px 3px;
+    transition: 0.5s;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: mediumseagreen;
+    background-color: rgb(255, 246, 228);
+    border: 5px solid mediumseagreen; 
+    border-radius: 25px;
+}
+.sudocru-div{
+    transition: 0.5s;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: darkblue;
+    border: 5px solid darkblue; 
+    border-radius: 25px;
+}
+.sudocru-div:hover{
+    text-shadow: rgb(255, 205, 104) 1px 1px 1px;
+    box-shadow: rgb(255, 205, 104) 3px 3px 3px;
+    transition: 0.5s;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: blue;
+    background-color: rgb(255, 246, 228);
+    border: 5px solid blue; 
+    border-radius: 25px;
+}
+.more-preojects-div{
+    transition: 0.5s;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: black;
+    border: 5px solid black; 
+    border-radius: 25px;
+}
+.more-preojects-div:hover{
+    text-shadow: lightblue 1px 1px 1px;
+    transition: 0.5s;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #dd6a51;
+    background-color: rgb(237, 251, 255);
+    border: 5px solid #dd6a51; 
+    border-radius: 25px;
+}
+
+.footer{
+    background-color: #ffdcb9;
+    display: flex;
+    flex-direction: column;
+}
+.footercol a{
+    transition: 0.5s;
+    color: gray;
+}
+.footercol a:hover{
+    transition: 0,5s;
+    color: #1b7eb7;
+}
+
+
+
+/*  ---   RESPONSIVE   ---  */
+
+/* PHONES */
+@media (max-width: 1000px){
+    .on-pc{
+        display: flex;
+    }
+    .on-mobile{
+        display: none;
+    }
+    nav{
+        grid-template-columns: 15% 70% 15%;
+        box-shadow: 0 10px 10px #dd7a1600;
+        border-radius: 0.5rem;
+    }
+    .jkuisinebrand{
+        justify-content: center;
+        text-align: center;
+        z-index: 2000;
+    }
+    .flag{
+        margin-right: 0;
+    }
+    .imgtitle{
+        justify-content: flex-start;
+        align-content: center;
+    }
+    .iloveburgers{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        z-index: 2000;
+    }
+    .menutitles{
+        position: absolute;
+        width: 100%;
+        height: fit-content;
+        margin: 0 auto;
+        padding: 75px 0 30px 0;
+        box-sizing: border-box;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        z-index: -100;
+        transition: 0.25s;
+        transform: translate(0, -300px); 
+        color: #7a1600;
+        background: white;
+    }
+    .menutitles.show{
+        transform: translate(0, 5%);
+        z-index: 999;
+    }
+    .menutitles a{
+        color: #7a1600;
+    }
+    .menutitles{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-bottom: 100%;
+        z-index: -2;
+    }
+    .hero-block{
+        height: 75%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-text{
+        justify-content: center;
+        text-align: center;
+    }
+    .download-cv-div, .download-github-div{
+        margin-top: 10px;
+        width: 250px;
+        height: 75px;
+    }
+    .hero-buttons-cols{
+        display: flex;
+        flex-direction: column;
+    }
+    .project-list{
+        display: flex;
+        flex-direction: column;
+    }
+    .discover-button{
+        display: none;
+    }
+    .projects-buttons-cols{
+        display: flex;
+        flex-direction: column;
+    }
+    .bubble{
+        margin: 25px auto;
+    }
+    .enbubble{
+        margin: 25px auto;
+    }
+    .my-last-projects{
+        background: linear-gradient(90deg, rgb(234, 250, 255), white, white, white, rgb(234, 250, 255));
+    }
+    .my-portfolio, .my-contact {
+        background: linear-gradient(90deg, white, white, rgb(234, 250, 255), white, white);
+    }
+
+    
+    .jkeys-div{
+        text-align: left;
+        margin-top: 10px;
+        width: 250px;
+        height: 150px;
+    }
+    .jkeys-div:hover{
+        text-align: left;
+        margin-top: 10px;
+        width: 250px;
+        height: 150px;
+    }
+    .sudocru-div{
+        text-align: left;
+        margin-top: 10px;
+        width: 250px;
+        height: 150px;
+    }
+    .sudocru-div:hover{
+        text-align: left;
+        margin-top: 10px;
+        width: 250px;
+        height: 150px;
+    }
+    .more-preojects-div{
+        text-align: left;
+        margin-top: 10px;
+        width: 250px;
+        height: 150px;
+    }
+    .more-preojects-div:hover{
+        text-align: left;
+        margin-top: 10px;
+        width: 250px;
+        height: 150px;
+    }
+    .section{
+        padding: 25px 10%;
+    }
+    .footer{
+        align-items: center;
+        padding-bottom: 50px;
+    }
+    .footerbox{
+        display: flex;
+        flex-direction: column;
+    }
+    .footercol{
+        display: flex;
+        flex-direction: column;
+        padding: 0 5%;
+    }
+}
+
+
+/* TABLETS */
+@media (min-width: 1001px){
+    .on-pc{
+        display: flex;
+    }
+    .on-mobile{
+        display: none;
+    }
+    .hero-block{
+        height: 75%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .jkuisinebrand{
+        margin-left: 20%;
+    }
+    .flag{
+        margin-right: 0;
+    }
+    .bubble{
+        margin: 25px auto;
+    }
+    .enbubble{
+        margin: 25px auto;
+    }
+    .hero-text{
+        justify-content: center;
+        text-align: center;
+    }
+    .download-cv-div, .download-github-div{
+        margin-top: 10px;
+        width: 250px;
+        height: 75px;
+    }
+    .hero-buttons-cols{
+        display: flex;
+        flex-direction: column;
+    }
+    .project-list{
+        display: flex;
+        flex-direction: column;
+    }
+    .discover-button{
+        display: none;
+    }
+    .projects-buttons-cols{
+        display: flex;
+        flex-direction: column;
+    }    
+    .jkeys-div{
+        text-align: left;
+        margin-top: 10px;
+        width: 300px;
+        height: 150px;
+    }
+    .jkeys-div:hover{
+        text-align: left;
+        margin-top: 10px;
+        width: 300px;
+        height: 150px;
+    }
+    .sudocru-div{
+        text-align: left;
+        margin-top: 10px;
+        width: 300px;
+        height: 150px;
+    }
+    .sudocru-div:hover{
+        text-align: left;
+        margin-top: 10px;
+        width: 300px;
+        height: 150px;
+    }
+    .more-preojects-div{
+        text-align: left;
+        margin-top: 10px;
+        width: 300px;
+        height: 150px;
+    }
+    .more-preojects-div:hover{
+        text-align: left;
+        margin-top: 10px;
+        width: 300px;
+        height: 150px;
+    }
+    .section{
+        padding: 25px 15%;
+    }
+    .footer{
+        align-items: center;
+        padding-bottom: 50px;
+    }
+    .footerbox{
+        display: flex;
+        flex-direction: row;
+    }
+    .footercol{
+        display: flex;
+        flex-direction: column;
+        padding: 0 10%;
+    }
+}
+
+
+/* PCs */
+@media (min-width: 1400px){
+    .on-pc{
+        display: none;
+    }
+    .on-mobile{
+        display: flex;
+    }
+    .hero-block{
+        height: 75%;
+        display: flex;
+        flex-direction: row;
+    }
+    .flag{
+        margin-right: 25px;
+    }
+    .bubble{
+        margin: 0;
+    }
+    .enbubble{
+        margin: 0;
+    }
+    .hero-text{
+        justify-content: center;
+        text-align: center;
+    }
+    .project-list{
+        display: flex;
+        flex-direction: row;
+    }
+    .discover-button{
+        display: flex;
+    }
+    .download-cv-div, .download-github-div{
+        margin-top: 10px;
+        width: 250px;
+        height: 75px;
+    }
+    .hero-buttons-cols{
+        display: flex;
+        flex-direction: column;
+    }
+    .projects-buttons-cols{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .jkeys-div{
+        text-align: left;
+        margin-top: 10px;
+        width: 300px;
+        height: 150px;
+    }
+    .jkeys-div:hover{
+        text-align: left;
+        margin-top: 10px;
+        width: 300px;
+        height: 150px;
+    }
+    .sudocru-div{
+        text-align: left;
+        margin-top: 10px;
+        width: 300px;
+        height: 150px;
+    }
+    .sudocru-div:hover{
+        text-align: left;
+        margin-top: 10px;
+        width: 300px;
+        height: 150px;
+    }
+    .more-preojects-div{
+        text-align: left;
+        margin-top: 10px;
+        width: 300px;
+        height: 150px;
+    }
+    .more-preojects-div:hover{
+        text-align: left;
+        margin-top: 10px;
+        width: 300px;
+        height: 150px;
+    }
+    .section{
+        padding: 25px 20%;
+    }
+    .footer{
+        align-items: center;
+        padding-bottom: 50px;
+    }
+    .footerbox{
+        display: flex;
+        flex-direction: row;
+    }
+    .footercol{
+        display: flex;
+        flex-direction: column;
+        padding: 0 15%;
+    }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JKuisine - Partager</title>
+	<link rel="stylesheet" href="../../assets/css/partager.css">
+	<link rel="shortcut icon" type="image/png" href="./assets/icons/jkuisine.png">
+	<meta name="description" content="JKuisine est un site de recettes de cuisine simples, rapides et gourmandes pour les étudiants mais pas que!">
+
+</head>
+
+<body>
+	
+	<div class="hero-img">
+		<nav>
+			<div></div>
+			<div class="jkuisinebrand">
+				<a href="./">
+					<img class="imgtitle" src="../assets/icons/jkuisine.png" >
+				</a>
+			</div>
+			<div class="menutitles">
+				<a href="../">🏠 Home</a>
+				<a href="../toutes_les_recettes">🍲 Toutes les recettes</a>
+				<a class="on-mobile" href="./">⬇️ Télécharger</a>
+				<a href="../en_savoir_plus">En savoir plus</a>
+			</div>
+			<div class="iloveburgers" onclick="eatoneburger()">
+				<div class="ham">
+					<div class="bur">
+						<span class="ger q"></span>
+						<span class="ger w"></span>
+						<span class="ger e"></span>
+					</div>
+				</div>
+				<script>
+					document.querySelector(".ham").addEventListener("click", function(){
+						document.querySelector(".q").classList.toggle("a")
+						document.querySelector(".w").classList.toggle("b")
+						document.querySelector(".e").classList.toggle("c")
+					})
+					function eatoneburger(){
+						document.querySelector(".menutitles").classList.toggle("show");
+					}
+				</script>
+			</div>
+		</nav>
+		<div class="hero-text">
+			<h1 class="hero-title">
+				Partager JKuisine
+			</h1>
+			
+			<div class="hero-buttons">
+				<div class="hero-buttons-cols">
+					<div style="display: flex; flex-direction: column; align-items: center;">
+						<img style="width: 25vh; border-radius: 10%;" src="../assets/imgs/share_jkuisine.png">
+					</div>
+					<p>Scanner le QR pour partager JKuisine!</p>
+					<a class="download-cv" href="../">
+						<div class="download-cv-div cv-shadow">
+							<img style="height: 40px; margin-right: 10%;" src="../../assets/icons/arrow-left-long-solid.svg">
+							<h2 class="github-text">Retour</h2>
+						</div>
+					</a>
+					<a class="github" href="#android" style="display: none;">
+						<div class="download-github-div">
+							<img style="height: 40px; margin-right: 10%;" src="../assets/icons/copy-solid.svg">
+							<h2 class="github-text">Copier</h2>
+						</div>
+					</a>
+					<a class="github" href="#ios">
+						<div class="download-github-div">
+							<img style="height: 40px; margin-right: 10%;" src="../assets/icons/share-nodes-solid.svg">
+							<h2 class="github-text">Partager</h2>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
