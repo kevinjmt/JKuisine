@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JKuisine - 0009 - Burger Gastronomique</title>
+	<link rel="stylesheet" href="../../assets/css/receipt.css">
+	<link rel="stylesheet" href="../../assets/css/receipts/burger.css">
+	<link rel="shortcut icon" type="image/png" href="../../assets/icons/jkuisine.png">
+	<meta name="description" content="JKuisine est un site de recettes de cuisine simples, rapides et gourmandes pour les étudiants mais pas que!">
+
+</head>
+
+<body>
+	
+	<div class="hero-img">
+		<nav>
+			<div></div>
+			<div class="jkuisinebrand">
+				<a href="../">
+					<img class="imgtitle" src="../../assets/icons/jkuisine.png" >
+				</a>
+			</div>
+			<div class="menutitles">
+				<a href="../../">🏠 Home</a>
+				<a href="../../toutes_les_recettes">🍲 Toutes les recettes</a>
+				<a class="on-mobile" href="../../telecharger">⬇️ Télécharger</a>
+				<a href="../../en_savoir_plus">En savoir plus</a>
+			</div>
+			<div class="iloveburgers" onclick="eatoneburger()">
+				<div class="ham">
+					<div class="bur">
+						<span class="ger q"></span>
+						<span class="ger w"></span>
+						<span class="ger e"></span>
+					</div>
+				</div>
+				<script>
+					document.querySelector(".ham").addEventListener("click", function(){
+						document.querySelector(".q").classList.toggle("a")
+						document.querySelector(".w").classList.toggle("b")
+						document.querySelector(".e").classList.toggle("c")
+					})
+					function eatoneburger(){
+						document.querySelector(".menutitles").classList.toggle("show");
+					}
+				</script>
+			</div>
+		</nav>
+		<div class="hero-text">			
+		
+			<div class="receipt" style="margin: 0 20vw; background-color: whitesmoke;">
+				<img class="receipt-image" src="../../assets/receipt_images/burger.jpg" alt="">
+				<div class="receipt-details">
+					<h2>0009 - Burger Gastronomique</h2>
+					<div class="receipt-infos">
+						<p>20-30min</p>
+						<h3>⭐⭐⭐⭐  </h3>
+						<h3>🪙🪙🪙🪙  </h3>
+					</div>
+				</div>
+			</div>
+			
+
+			<div class="hero-buttons">
+				<div class="hero-buttons-cols">
+					<a class="download-cv" href="../">
+						<div class="download-cv-div cv-shadow">
+							<img style="height: 40px; margin-right: 10%;" src="../../assets/icons/arrow-left-long-solid.svg">
+							<h2 class="github-text">Retour</h2>
+						</div>
+					</a>
+					<a class="github" href="../../telecharger/">
+						<div class="download-github-div">
+							<img style="height: 40px; margin-right: 10%;" src="../../assets/icons/file-arrow-down-solid.svg">
+							<h2 class="github-text">Télécharger</h2>
+						</div>
+					</a>
+					<a class="github on-pc" href="../../partager/">
+						<div class="download-github-div">
+							<img style="height: 40px; margin-right: 10%;" src="../../assets/icons/share-nodes-solid.svg">
+							<h2 class="github-text">Partager JKuisine</h2>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	<div class="pagebody">
+		
+		<div class="receipt">
+			<h1 style="margin: 50px 0;">Burger Gastronomique</h1>
+
+			<div style="background-color: #ffd9d0; height: 5px; border-radius: 10px;"></div>
+
+			<div class="receipt-key-infos" style="display: flex; flex-direction: row; justify-content: space-around;">
+				<div style="display: flex; flex-direction: column;">
+					<p><b>Pour</b> 👤👤</p>
+					<p><b>Difficulté:</b>  ⭐⭐⭐⭐  </p>
+					<p><b>Prix:</b>        🪙🪙🪙🪙  </p>
+				</div>
+				<div style="display: flex; flex-direction: column;">
+					<p><b>🍱 Conservation</b></p>
+					<p>1-2j au réfrigérateur</p>
+					<p style="color: orangered;">♨ Peut-être réchauffé</p>
+					<p style="color: lightblue; display: none;">❄️ Peut-être congelé</p>
+				</div>
+			</div>
+
+			<div style="background-color: #ffd9d0; height: 5px; border-radius: 10px;"></div>
+
+			<div class="receipt-key-infos" style="display: flex; flex-direction: row; justify-content: left; margin-bottom: 25px;">
+				<div>
+					<p><b>Ingrédients</b></p>
+					<li>Pain à burger (Taille Géante - XXL)</li>
+					<li>Cheddar en bloc (ou bloc coupé en tranches)</li>
+					<li>Steaks façon bouchère</li>
+					<li>Beurre / Huile</li>	
+					<li>Sauces, Bacon, Salade, Tomate,
+						Cornichons, Oignons, ou autres
+						suppléments (optionnel)</li>
+				</div>
+			</div>
+			
+			<div style="background-color: #ffd9d0; height: 5px; border-radius: 10px;"></div>
+
+			<div class="receipt-key-infos" style="display: flex; flex-direction: row; justify-content: left; margin-bottom: 25px;">
+				<div>
+					<p><b>Temps de préparation:</b></p>
+					<p>10min</p>
+					<p><b>Temps de repos:</b></p>
+					<p>---</p>
+					<p><b>Temps de cuisson:</b></p>
+					<p>10-20min</p>
+					<p style="margin: 25px 0;"><b>Temps total:</b></p>
+					<p>20-30min</p>
+				</div>
+			</div>
+
+			<div style="background-color: #ffd9d0; height: 5px; border-radius: 10px;"></div>
+
+			<div class="receipt-key-infos" style="display: flex; flex-direction: row; justify-content: left; margin-bottom: 25px;">
+				<div>
+					<p><b>Matériel nécessaire:</b></p>
+					<li>1 poêle (pour cuire les steaks)</li>
+					<li>1 autre poêle pour cuire les autres suppléments (bacon, oignons etc) <i>(optionnel)</i></li>
+					<li>1 planche à découper ou tout autre matériel pour couper les suppléments <i>(optionnel)</i></li>
+				</div>
+			</div>
+			
+			<div style="background-color: #ffd9d0; height: 5px; border-radius: 10px;"></div>
+
+			<div class="receipt-key-infos" style="display: flex; flex-direction: row; justify-content: left; margin-bottom: 25px;">
+				<div>		
+					<p><b>Recette:</b></p>	
+					<li>Pour commencer, mettre une noisette de beurre ou une cuillère à soupe d’huile et
+					mettre dans la poêle sur feu fort.</li>
+					<li>Pendant ce temps, préparer le fromage en mettant les morceaux de cheddar dans une
+					casserole ou dans un bol (si vous préférez le faire fondre au micro-ondes). Le faire fondre
+					délicatement avec un peu d’eau ou de lait pour ne pas faire coller le fromage.</li>
+					<li>Lorsque le fromage est fondu, mettre la sauce burger (optionnel) dans le fromage (une cuillère
+					à soupe par burger).</li>
+					<li>Attendre que le beurre ou l’huile soit brûlant(e) et commence à crépiter, puis mettre à feu
+					moyen la poêle et déposer les steaks. Faire de même avec le bacon ou tout autre supplément
+					ayant besoin d’être cuit ou grillé.</li>
+					<li>Attendre deux petites minutes puis retourner les steaks. Attendre de nouveau 2min, puis
+					retourner de nouveau. Ajouter les épices que vous désirez directement sur les steaks !</li>
+					<li>Pour la cuisson des pains,</li>
+
+					<div class="receipt" style="margin: 25px 0; padding-bottom: 25px; background-color: white">
+						<p><b>🧑‍🍳 Conseil du ptit’chef :</b></p>
+							<p>Méthode pour des pains moelleux :</p>
+								<li>Mettre la face intérieure des pains dans la poêle avec les steaks afin de cuire
+									l’intérieur.</li>
+							<p>Méthode pour des pains croustillants :</p>
+								<li>Mettre les pains dans le grille-pain, attention à ne pas les cramer !</li>
+					</div>
+					<div class="receipt" style="margin: 25px 0; padding-bottom: 25px; background-color: white">
+						<p><b>🧑‍🍳 Conseil du ptit’chef :</b></p>
+							<p>⚠️ Faites bien attention à la cuisson de tous vos ingrédients, il est très facile de
+								perdre le fil à cause du nombre d’ingrédients sur le feu ! Surveillez constamment
+								tous vos ingrédients et ne faites pas autre chose en attendant !
+								La difficulté de cette recette est uniquement due aux cuissons à gérer en
+								parallèle !</p>
+					</div>
+
+					<li>Assembler le tout à votre goût et servir le burger avec des potatoes, des frites et un peu de
+						légumes en fonction de vos goûts et de vos envies !</li>
+					
+				</div>
+			</div>
+
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+		<h3>Made with ❤️ by KJ</h3>
+		<div class="footerbox">
+			<div class="footercol">
+				<h3>Documents</h3>
+				<a href="../downloads/Kévin JAMET.vcf">Contact</a>
+				<a href="../downloads/CV - Kévin JAMET.pdf" target="_blank">Resume</a>
+			</div>
+			<div class="footercol">
+				<h3>Social</h3>
+				<a href="https://www.linkedin.com/in/k%C3%A9vin-jamet-12a22222b/">LinkedIn</a>
+				<a href="https://github.com/kevinjmt">GitHub</a>
+				<a href="">Discord</a>
+				<a href="">Instagram</a>
+				<a href="">YouTube</a>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>

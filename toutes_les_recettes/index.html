@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JKuisine - Recherche</title>
+	<link rel="stylesheet" href="../assets/css/toutes_les_recettes.css">
+	<link rel="shortcut icon" type="image/png" href="../assets/icons/jkuisine.png">
+	<meta name="description" content="JKuisine est un site de recettes de cuisine simples, rapides et gourmandes pour les étudiants mais pas que!">
+
+</head>
+
+<body>
+	
+	<div class="hero-img">
+		<nav>
+			<div></div>
+			<div class="jkuisinebrand">
+				<a href="../">
+					<img class="imgtitle" src="../assets/icons/jkuisine.png" >
+				</a>
+			</div>
+			<div class="menutitles">
+				<a href="../">🏠 Home</a>
+				<a href="./">🍲 Toutes les recettes</a>
+				<a class="on-mobile" href="../telecharger">⬇️ Télécharger</a>
+				<a href="../en_savoir_plus">En savoir plus</a>
+			</div>
+			<div class="iloveburgers" onclick="eatoneburger()">
+				<div class="ham">
+					<div class="bur">
+						<span class="ger q"></span>
+						<span class="ger w"></span>
+						<span class="ger e"></span>
+					</div>
+				</div>
+				<script>
+					document.querySelector(".ham").addEventListener("click", function(){
+						document.querySelector(".q").classList.toggle("a")
+						document.querySelector(".w").classList.toggle("b")
+						document.querySelector(".e").classList.toggle("c")
+					})
+					function eatoneburger(){
+						document.querySelector(".menutitles").classList.toggle("show");
+					}
+
+					window.onload = function(){
+						document.getElementById("recherche-input").focus();
+					}
+
+					document.addEventListener("keydown", (event) => {
+						if (document.activeElement != document.getElementById("recherche-input") && (event.isComposing || event.keyCode == 27)) {
+							document.getElementById("recherche-input").value = "";
+						}
+						if (document.activeElement != document.getElementById("recherche-input") && (event.isComposing || event.keyCode == 27)) {
+							document.getElementById("recherche-input").focus();
+						}	
+						
+						if (document.activeElement == document.getElementById("recherche-input") && (event.isComposing || event.keyCode == 13)) {
+							console.log("finished searching!");
+						}
+					})
+				</script>
+			</div>
+		</nav>
+		<div class="hero-text">
+			
+			<div class="hero-buttons">
+				<div class="download-cv" target="_blank" href="../">
+					<div class="download-cv-div cv-shadow">
+							<img style="height: 40px; margin: 0 5%; " src="../assets/icons/search.svg">
+							<input id="recherche-input" type="text" class="rechercher-input"  placeholder="Rechercher une recette 🥘" onkeyup="search()">
+					</div>
+				</div>
+				<div class="hero-buttons-cols">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	<div class="pagebody">
+
+		<script src="./seach.js"></script>
+
+		<div class="hero-text">
+			
+			<h3 style="color: #dd6a51;" class="download-app on-mobile">
+				📲 Toujours sur ton tel ? 
+				<a style="color: orange;" href="./telecharger/">Télécharger l'application</a> 
+			</h3>
+			<h3 class="subtitle on-mobile" style="color: #dd6a51; padding-bottom: 25px;">
+				🔍 Appuie sur 'echap' pour lancer une nouvelle recherche
+			</h3>
+	
+		</div>
+
+		<div class="receipt-list" id="receipt-list">
+
+			<a class="receipt-link" href="../">
+				<div class="receipt">
+					<img class="receipt-image" src="../assets/receipt_images/poisson_sauce_tomate.jpg" alt="">
+					<div class="receipt-details">
+						<h2>0010 - Poisson a la sauce tomate</h2>
+						<div class="receipt-infos">
+							<p class="bubble" style="width: 100px; height: 30px; background-color: darkorange;">PLAT</p>
+							<p>15-25min</p>
+							<h3>⭐⭐      </h3>
+							<h3>🪙🪙🪙    </h3>
+						</div>
+					</div>
+				</div>
+			</a>
+
+			<a class="receipt-link" href="./0009_Burger_Gastronomique/">
+				<div class="receipt">
+					<img class="receipt-image" src="../assets/receipt_images/burger.jpg" alt="">
+					<div class="receipt-details">
+						<h2>0009 - Burger Gastronomique</h2>
+						<div class="receipt-infos">
+							<p class="bubble" style="width: 100px; height: 30px; background-color: darkorange;">PLAT</p>
+							<p>20-30min</p>
+							<h3>⭐⭐⭐⭐  </h3>
+							<h3>🪙🪙🪙🪙  </h3>
+						</div>
+					</div>
+				</div>
+			</a>
+
+			<a class="receipt-link" href="../">
+				<div class="receipt">
+					<img class="receipt-image" src="../assets/receipt_images/croque_monsieur.jpg" alt="">
+					<div class="receipt-details">
+						<h2>0008 - Croque Monsieur poele</h2>
+						<div class="receipt-infos">
+							<p class="bubble" style="width: 100px; height: 30px; background-color: darkorange;">PLAT</p>
+							<p>25-40min</p>
+							<h3>⭐⭐      </h3>
+							<h3>🪙🪙🪙    </h3>
+						</div>
+					</div>
+				</div>
+			</a>
+
+			<a class="receipt-link" href="../">
+				<div class="receipt">
+					<img class="receipt-image" src="../assets/receipt_images/saumon_pates.jpg" alt="">
+					<div class="receipt-details">
+						<h2>0007 - Saumon au vin blanc et parmesan</h2>
+						<div class="receipt-infos">
+							<p class="bubble" style="width: 100px; height: 30px; background-color: darkorange;">PLAT</p>
+							<p>15-25min</p>
+							<h3>⭐⭐      </h3>
+							<h3>🪙🪙🪙    </h3>
+						</div>
+					</div>
+				</div>
+			</a>
+
+			<a class="receipt-link" href="../">
+				<div class="receipt">
+					<img class="receipt-image" src="../assets/receipt_images/sauce_roquefort.jpg" alt="">
+					<div class="receipt-details">
+						<h2>0006 - Sauce Roquefort</h2>
+						<div class="receipt-infos">
+							<p class="bubble" style="width: 150px; height: 30px; background-color: darkgoldenrod;">CONDIMENT</p>
+							<p>3min</p>
+							<h3>⭐⭐⭐    </h3>
+							<h3>🪙🪙🪙    </h3>
+						</div>
+					</div>
+				</div>
+			</a>
+
+			<a class="receipt-link" href="../">
+				<div class="receipt">
+					<img class="receipt-image" src="../assets/receipt_images/poulet_curry.jpg" alt="">
+					<div class="receipt-details">
+						<h2 style="width: 100%;">0005 - Poulet au curry</h2>
+						<div class="receipt-infos">
+							<p class="bubble" style="width: 100px; height: 30px; background-color: darkorange;">PLAT</p>
+							<p>15-25min</p>
+							<h3>⭐        </h3>
+							<h3>🪙🪙      </h3>
+						</div>
+					</div>
+				</div>
+			</a>
+
+			<a class="receipt-link" href="../">
+				<div class="receipt">
+					<img class="receipt-image" src="../assets/receipt_images/nouilles_chinoises.jpg" alt="">
+					<div class="receipt-details">
+						<h2>0004 - Nouilles Chinoises sautees</h2>
+						<div class="receipt-infos">
+							<p class="bubble" style="width: 100px; height: 30px; background-color: darkorange;">PLAT</p>
+							<p>20min</p>
+							<h3>⭐⭐      </h3>
+							<h3>🪙🪙🪙    </h3>
+						</div>
+					</div>
+				</div>
+			</a>
+
+			<a class="receipt-link" href="../">
+				<div class="receipt">
+					<img class="receipt-image" src="../assets/receipt_images/poisson_creme.jpg" alt="">
+					<div class="receipt-details">
+						<h2>0003 - Poisson a la creme</h2>
+						<div class="receipt-infos">
+							<p class="bubble" style="width: 100px; height: 30px; background-color: darkorange;">PLAT</p>
+							<p>15-25min</p>
+							<h3>⭐        </h3>
+							<h3>🪙🪙      </h3>
+						</div>
+					</div>
+				</div>
+			</a>
+
+			<a class="receipt-link" href="../">
+				<div class="receipt">
+					<img class="receipt-image" src="../assets/receipt_images/poulet_creme.jpg" alt="">
+					<div class="receipt-details">
+						<h2>0002 - Poulet a la creme</h2>
+						<div class="receipt-infos">
+							<p class="bubble" style="width: 100px; height: 30px; background-color: darkorange;">PLAT</p>
+							<p>15-25min</p>
+							<h3>⭐        </h3>
+							<h3>🪙🪙      </h3>
+						</div>
+					</div>
+				</div>
+			</a>
+
+			<a class="receipt-link" href="../">
+				<div class="receipt">
+					<img class="receipt-image" src="../assets/receipt_images/pates_carbonara.jpg" alt="">
+					<div class="receipt-details">
+						<h2>0001 - Pates Carbonara (A la Francaise)</h2>
+						<div class="receipt-infos">
+							<p class="bubble" style="width: 100px; height: 30px; background-color: darkorange;">PLAT</p>
+							<p>15-20min</p>
+							<h3>⭐        </h3>
+							<h3>🪙🪙      </h3>
+						</div>
+					</div>
+				</div>
+			</a>
+
+		</div>
+		
+	</div>
+
+
+	<footer class="footer">
+		<h3>Made with ❤️ by KJ</h3>
+		<div class="footerbox">
+			<div class="footercol">
+				<h3>Documents</h3>
+				<a href="../downloads/Kévin JAMET.vcf">Contact</a>
+				<a href="../downloads/CV - Kévin JAMET.pdf" target="_blank">Resume</a>
+			</div>
+			<div class="footercol">
+				<h3>Social</h3>
+				<a href="https://www.linkedin.com/in/k%C3%A9vin-jamet-12a22222b/">LinkedIn</a>
+				<a href="https://github.com/kevinjmt">GitHub</a>
+				<a href="">Discord</a>
+				<a href="">Instagram</a>
+				<a href="">YouTube</a>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>

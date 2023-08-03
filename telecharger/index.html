@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JKuisine - Télécharger</title>
+	<link rel="stylesheet" href="./assets/css/home.css">
+	<link rel="shortcut icon" type="image/png" href="./assets/icons/jkuisine.png">
+	<meta name="description" content="JKuisine est un site de recettes de cuisine simples, rapides et gourmandes pour les étudiants mais pas que!">
+
+</head>
+
+<body>
+	
+	<div class="hero-img">
+		<nav>
+			<div></div>
+			<div class="jkuisinebrand">
+				<a href="./">
+					<img class="imgtitle" src="assets/icons/jkuisine.png" >
+				</a>
+			</div>
+			<div class="menutitles">
+				<a href="./">🏠 Home</a>
+				<a href="./toutes_les_recettes">🍲 Toutes les recettes</a>
+				<a class="on-mobile" href="./telecharger">⬇️ Télécharger</a>
+				<a href="./en_savoir_plus">En savoir plus</a>
+			</div>
+			<div class="iloveburgers" onclick="eatoneburger()">
+				<div class="ham">
+					<div class="bur">
+						<span class="ger q"></span>
+						<span class="ger w"></span>
+						<span class="ger e"></span>
+					</div>
+				</div>
+				<script>
+					document.querySelector(".ham").addEventListener("click", function(){
+						document.querySelector(".q").classList.toggle("a")
+						document.querySelector(".w").classList.toggle("b")
+						document.querySelector(".e").classList.toggle("c")
+					})
+					function eatoneburger(){
+						document.querySelector(".menutitles").classList.toggle("show");
+					}
+				</script>
+			</div>
+		</nav>
+		<div class="hero-text">
+			<div>
+				<img class="on-mobile" style="width: 15%;" src="assets/icons/jkuisine.png" >
+			</div>
+			<h1 class="hero-title">
+				JKuisine
+			</h1>
+			<h3 class="subtitle">
+				🥘 Des recettes simples, rapides et gourmandes pour les étudiants mais pas que! 😋
+			</h3>
+			
+			<div class="hero-buttons">
+				<div class="hero-buttons-cols">
+					<a class="download-cv" target="_blank" href="./assets/downloads/CV - Kévin JAMET.pdf">
+						<div class="download-cv-div cv-shadow">
+							<img style="height: 40px; margin-right: 10%;" src="./assets/icons/search.svg">
+							<h2 class="cv-text">Rechercher</h2>
+						</div>
+					</a>
+					<a class="github" target="_blank" href="https://github.com/kevinjmt">
+						<div class="download-github-div">
+							<img style="height: 40px; margin-right: 10%;" src="./assets/icons/angles-right-solid.svg">
+							<h2 class="github-text">Voir tout</h2>
+						</div>
+					</a>
+				</div>
+			</div>
+			
+			<h3 class="download-app on-mobile">
+				📲 Toujours sur ton tel ? 
+				<a href="">Télécharger l'application</a> 
+			</h3>
+		</div>
+	</div>
+	
+
+	<div class="pagebody">
+
+		<input type="text" autofocus>
+
+		<div style="margin-top: 15px;" class="hero-buttons discover-button">
+			<div class="projects-buttons-cols">
+				<a class="download-cv" href="#portfolio">
+					<div class="download-cv-div">
+						<img style="height: 40px; margin-right: 10%;" src="./assets/icons/chevron-down-solid.svg">
+						<h2 class="cv-text">En savoir plus</h2>
+					</div>
+				</a>
+			</div>
+		</div>
+
+		<div id="portfolio" style="margin: 25px 0;" class="hero-buttons in-dev-button">
+			<div class="in-dev">
+				<img style="height: 40px;" src="./assets/icons/person-digging-solid.svg">
+				<h2 class="cv-text">Ce site est en développement</h2>
+			</div>
+		</div>
+
+
+		<div class="section my-portfolio">
+			<h1 class="title">
+				MON PORTFOLIO
+			</h1>
+			<h3>Découvrir mon parcours, mes formations et bien plus !</h3>
+			<a class="download-cv" href="./portfolio">
+				<div class="download-cv-div">
+					<img style="height: 40px; margin-right: 10%;" src="./assets/icons/clipboard-user-solid.svg">
+					<h2 class="cv-text">En savoir plus</h2>
+				</div>
+			</a>
+		</div>
+
+		<div class="section my-last-projects">
+			<h1 class="title">
+				MES DERNIERS PROJETS
+			</h1>
+			<h3>Voici les derniers projets que j'ai réalisés récemment !</h3>
+			<div class="hero-buttons">
+				<div class="projects-buttons-cols">
+					<a class="download-cv" target="_blank" href="https://kevinjmt.github.io/JKeysWebsite">
+						<div class="jkeys-div">
+							<img style="height: 100px; margin-right: 10%;" src="./assets/icons/jkey.png">
+							<div>
+								<h2 class="cv-text">JKeys</h2>
+								<h3>A password manager LAN hosted</h3>
+							</div>
+						</div>
+					</a>
+					<a class="github" target="_blank" href="https://github.com/SudOCRu/SudOCRu">
+						<div class="sudocru-div">
+							<img style="height: 100px; margin-right: 10%;" src="./assets/icons/SudOCRu.png">
+							<div style="display: flex; flex-direction: column;">
+								<h2 class="cv-text">SudOCRu</h2>
+								<h3>An OCR Sudoku Solver</h3>
+							</div>
+						</div>
+					</a>
+					<a class="download-cv" href="./mesprojets">
+						<div class="more-preojects-div">
+							<img style="height: 75px; margin-right: 10%;" src="./assets/icons/angles-right-solid.svg">
+							<h2 class="cv-text">Voir Tout</h2>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="section my-contact">
+			<h1 class="title">
+				MON CONTACT
+			</h1>
+			<h3>Ajoutez-moi à vos contacts ainsi que sur tous mes réseaux !</h3>
+			<div style="display: flex; flex-direction: column; align-items: center;">
+				<img style="width: 20%;" src="./assets/imgs/contact.png">
+				<h3>Scannez le QR pour ajouter mon contact ou télécharger le grâce aux boutons ci-dessous</h3>
+			</div>
+			<div class="hero-buttons-cols">
+				<a class="download-cv" target="_blank" href="./assets/downloads/Kévin JAMET.vcf">
+					<div class="download-cv-div cv-shadow">
+						<img style="height: 40px; margin-right: 10%;" src="./assets/icons/address-card-solid.svg">
+						<h2 class="cv-text">Mon Contact</h2>
+					</div>
+				</a>
+				<a class="download-cv" href="./contact">
+					<div class="download-cv-div">
+						<img style="height: 40px; margin-right: 10%;" src="./assets/icons/angles-right-solid.svg">
+						<h2 class="cv-text">Me contacter</h2>
+					</div>
+				</a>
+			</div>
+		</div>
+
+		<div class="section my-passion">
+			<h1 class="title">
+				MA PASSION
+			</h1>
+			<h3>Découvrir ma vie, ce qui me motive et me passionne depuis tant d'années !</h3>
+			<div class="hero-buttons-cols">
+				<a class="download-cv" href="./portfolio/#2016">
+					<div class="download-cv-div">
+						<img style="height: 40px; margin-right: 10%;" src="./assets/icons/angles-right-solid.svg">
+						<h2 class="cv-text">Me découvrir</h2>
+					</div>
+				</a>
+			</div>
+		</div>
+
+
+	</div>
+
+
+	<footer class="footer">
+		<h3>Made with ❤️ by KJ</h3>
+		<div class="footerbox">
+			<div class="footercol">
+				<h3>Documents</h3>
+				<a href="./downloads/Kévin JAMET.vcf">Contact</a>
+				<a href="./downloads/CV - Kévin JAMET.pdf" target="_blank">Resume</a>
+			</div>
+			<div class="footercol">
+				<h3>Social</h3>
+				<a href="https://www.linkedin.com/in/k%C3%A9vin-jamet-12a22222b/">LinkedIn</a>
+				<a href="https://github.com/kevinjmt">GitHub</a>
+				<a href="">Discord</a>
+				<a href="">Instagram</a>
+				<a href="">YouTube</a>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>
