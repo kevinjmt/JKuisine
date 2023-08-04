@@ -1,5 +1,4 @@
 const search = () => {
-    console.log("cacaprout")
     const searchbox = document.getElementById("recherche-input").value.toUpperCase();
     const storeitems = document.getElementById("receipt-list");
     const product = document.querySelectorAll(".receipt-link");

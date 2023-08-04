@@ -216,7 +216,16 @@ p{
     font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1500 - 320)));
     color: black;
 }
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
 .download-cv, .github{
+    cursor: pointer;
     align-self: center;
     margin-top: 100px;
     display: flex;

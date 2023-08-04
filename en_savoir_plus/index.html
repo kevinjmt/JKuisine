@@ -4,9 +4,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>JKuisine - LE site de cuisine</title>
-	<link rel="stylesheet" href="./assets/css/home.css">
-	<link rel="shortcut icon" type="image/png" href="./assets/icons/jkuisine.png">
+	<title>JKuisine - Découvrir JKuisine 🧑‍🍳</title>
+	<link rel="stylesheet" href="../assets/css/en_savoir_plus.css">
+	<link rel="shortcut icon" type="image/png" href="../assets/icons/jkuisine.png">
 	<meta name="description" content="JKuisine est un site de recettes de cuisine simples, rapides et gourmandes pour les étudiants mais pas que!">
 
 </head>
@@ -17,15 +17,15 @@
 		<nav>
 			<div></div>
 			<div class="jkuisinebrand">
-				<a href="./">
-					<img class="imgtitle" src="assets/icons/jkuisine.png" >
+				<a href="../">
+					<img class="imgtitle" src="../assets/icons/jkuisine.png" >
 				</a>
 			</div>
 			<div class="menutitles">
-				<a href="./">🏠 Home</a>
-				<a href="./toutes_les_recettes">🔍 Rechercher</a>
-				<a href="./telecharger">🍲 Toutes les recettes</a>
-				<a href="./en_savoir_plus">En savoir plus</a>
+				<a href="../">🏠 Home</a>
+				<a href="../toutes_les_recettes">🍲 Toutes les recettes</a>
+				<a class="on-mobile" href="../telecharger/">⬇️ Télécharger</a>
+				<a href="../en_savoir_plus">En savoir plus</a>
 			</div>
 			<div class="iloveburgers" onclick="eatoneburger()">
 				<div class="ham">
@@ -48,152 +48,101 @@
 			</div>
 		</nav>
 		<div class="hero-text">
-			<div>
-				<img class="on-mobile" style="width: 15%;" src="assets/icons/jkuisine.png" >
+			<div class="hero-buttons">
+				<img style="width: 15vh;" src="../assets/icons/jkuisine.png" >
 			</div>
-			<h1 class="hero-title">
-				JKuisine
-			</h1>
-			<h3 class="subtitle">
-				🥘 Des recettes simples, rapides et gourmandes pour les étudiants mais pas que! 😋
-			</h3>
+			<h2 class="subtitle">
+				🍛Maintenant, c'est vous le chef! 🧑‍🍳
+			</h2>
 			
 			<div class="hero-buttons">
 				<div class="hero-buttons-cols">
-					<a class="download-cv" target="_blank" href="./assets/downloads/CV - Kévin JAMET.pdf">
-						<div class="download-cv-div cv-shadow">
-							<img style="height: 40px; margin-right: 10%;" src="./assets/icons/search.svg">
-							<h2 class="cv-text">Rechercher</h2>
-						</div>
-					</a>
-					<a class="github" target="_blank" href="https://github.com/kevinjmt">
+					<a class="github" href="#commencer">
 						<div class="download-github-div">
-							<img style="height: 40px; margin-right: 10%;" src="./assets/icons/angles-right-solid.svg">
-							<h2 class="github-text">Voir tout</h2>
+							<img style="height: 40px; margin-right: 10%;" src="../assets/icons/angles-right-solid.svg">
+							<h2 class="github-text">Découvrir</h2>
 						</div>
 					</a>
 				</div>
 			</div>
-			
-			<h3 class="download-app on-mobile">
-				📲 Toujours sur ton tel ? 
-				<a href="">Télécharger l'application</a> 
-			</h3>
 		</div>
 	</div>
 	
 
 	<div class="pagebody">
 
-		<input type="text" autofocus>
+		<div id="commencer" class="hero-text" style="padding: 10vh 0;">
+			<h1>Qu'est ce que JKuisine?</h1>
+			<p>JKuisine est un site de recettes de cuisine développé par <a target="_blank" style="color: orange;" href="https://kevinjmt.github.io/">KJ</a>
+				dans le but de donner des idées de
+				recette aux étudiants ou tout autre personne n'ayant pas forcément le temps ni l'argent pour cuisiner.</p>
+		</div>
 
-		<div style="margin-top: 15px;" class="hero-buttons discover-button">
-			<div class="projects-buttons-cols">
-				<a class="download-cv" href="#portfolio">
-					<div class="download-cv-div">
-						<img style="height: 40px; margin-right: 10%;" src="./assets/icons/chevron-down-solid.svg">
-						<h2 class="cv-text">En savoir plus</h2>
+		
+		<div class="hero-block" style="background-color: rgb(242, 242, 242); border-radius: 15px;">
+
+			<div class="hero-items">
+				<img src="../assets/imgs/en_savoir_plus_hero2.jpg" class="hero-img2">
+			</div>
+			<div class="hero-text">
+				<h1>La force de JKuisine</h1>
+				<p class="text-hero2">La force de JKuisine est d'exposer des recettes simples rapides et adaptées aux repas sur le pouce! 
+					En plus, d'être accessible à tous, sans compte, gratuitement, de manière libre et transparente! 
+					Tu n'y crois pas? <a href="https://github.com/kevinjmt/JKuisine">Vérifie par toi-même! 😉</a></p>
+			</div>
+
+		</div>
+
+
+		<div id="commencer" class="hero-text" style="padding: 10vh 0;">
+			<h1>🛡️ La politique JKuisine 🛡️</h1>
+			<p><b>Vos données sont privées, nous devons en aucun cas y toucher!</b></p>
+			<p>Le site est hébergé sur GitHub sans aucune indexation en ligne, introuvable sur les moteurs de recherche 
+				et aucun cookie de tracking ou de performances!</p>
+			<p>🍪 Nous, les cookies on préfère les cuisiner et les manger! 😋</p>
+		</div>
+
+		
+		<div class="hero-block" style="padding-top: 5vh; background-color: rgb(250, 191, 81); border-radius: 15px;">
+
+			<div class="hero-text">
+				<div class="hero-text">
+					<h1>Une appli qui change la vie! 📱</h1>
+					<p>JKuisine est disponible sur toutes les plateformes, IOS et Android!</p>
+				</div>	
+				<div class="hero-buttons" style="padding-bottom: 10%;">
+					<div class="hero-buttons-cols">
+						<a class="github" href="../telecharger/">
+							<div class="download-github-div">
+								<img style="height: 40px; margin-right: 10%;" src="../assets/icons/download-solid.svg">
+								<h2 class="github-text">Télécharger</h2>
+							</div>
+						</a>
 					</div>
-				</a>
+				</div>			
+			</div>	
+
+			<div class="hero-items">
+				<img src="../assets/imgs/en_savoir_plus_hero3.png" class="hero-img3">
 			</div>
 		</div>
 
-		<div id="portfolio" style="margin: 25px 0;" class="hero-buttons in-dev-button">
-			<div class="in-dev">
-				<img style="height: 40px;" src="./assets/icons/person-digging-solid.svg">
-				<h2 class="cv-text">Ce site est en développement</h2>
-			</div>
-		</div>
-
-
-		<div class="section my-portfolio">
-			<h1 class="title">
-				MON PORTFOLIO
-			</h1>
-			<h3>Découvrir mon parcours, mes formations et bien plus !</h3>
-			<a class="download-cv" href="./portfolio">
-				<div class="download-cv-div">
-					<img style="height: 40px; margin-right: 10%;" src="./assets/icons/clipboard-user-solid.svg">
-					<h2 class="cv-text">En savoir plus</h2>
-				</div>
-			</a>
-		</div>
-
-		<div class="section my-last-projects">
-			<h1 class="title">
-				MES DERNIERS PROJETS
-			</h1>
-			<h3>Voici les derniers projets que j'ai réalisés récemment !</h3>
+		<div id="commencer" class="hero-text" style="padding-top: 10vh;">
+			<h1>A vos couteaux, prêt, partez!</h1>
+			<p>Lance-toi et deviens le ptit chef dès maintenant! 🧑‍🍳</p>
+			
 			<div class="hero-buttons">
-				<div class="projects-buttons-cols">
-					<a class="download-cv" target="_blank" href="https://kevinjmt.github.io/JKeysWebsite">
-						<div class="jkeys-div">
-							<img style="height: 100px; margin-right: 10%;" src="./assets/icons/jkey.png">
-							<div>
-								<h2 class="cv-text">JKeys</h2>
-								<h3>A password manager LAN hosted</h3>
-							</div>
-						</div>
-					</a>
-					<a class="github" target="_blank" href="https://github.com/SudOCRu/SudOCRu">
-						<div class="sudocru-div">
-							<img style="height: 100px; margin-right: 10%;" src="./assets/icons/SudOCRu.png">
-							<div style="display: flex; flex-direction: column;">
-								<h2 class="cv-text">SudOCRu</h2>
-								<h3>An OCR Sudoku Solver</h3>
-							</div>
-						</div>
-					</a>
-					<a class="download-cv" href="./mesprojets">
-						<div class="more-preojects-div">
-							<img style="height: 75px; margin-right: 10%;" src="./assets/icons/angles-right-solid.svg">
-							<h2 class="cv-text">Voir Tout</h2>
+				<div class="hero-buttons-cols">
+					<a class="github" href="../toutes_les_recettes/">
+						<div class="download-github-div">
+							<img style="height: 40px; margin-right: 10%;" src="../assets/icons/angles-right-solid.svg">
+							<h2 class="github-text">Cuisiner</h2>
 						</div>
 					</a>
 				</div>
-			</div>
+			</div>	
+			<p>Clique sur le bouton ci-dessus pour accéder à toutes les recettes!</p>
 		</div>
-
-		<div class="section my-contact">
-			<h1 class="title">
-				MON CONTACT
-			</h1>
-			<h3>Ajoutez-moi à vos contacts ainsi que sur tous mes réseaux !</h3>
-			<div style="display: flex; flex-direction: column; align-items: center;">
-				<img style="width: 20%;" src="./assets/imgs/contact.png">
-				<h3>Scannez le QR pour ajouter mon contact ou télécharger le grâce aux boutons ci-dessous</h3>
-			</div>
-			<div class="hero-buttons-cols">
-				<a class="download-cv" target="_blank" href="./assets/downloads/Kévin JAMET.vcf">
-					<div class="download-cv-div cv-shadow">
-						<img style="height: 40px; margin-right: 10%;" src="./assets/icons/address-card-solid.svg">
-						<h2 class="cv-text">Mon Contact</h2>
-					</div>
-				</a>
-				<a class="download-cv" href="./contact">
-					<div class="download-cv-div">
-						<img style="height: 40px; margin-right: 10%;" src="./assets/icons/angles-right-solid.svg">
-						<h2 class="cv-text">Me contacter</h2>
-					</div>
-				</a>
-			</div>
-		</div>
-
-		<div class="section my-passion">
-			<h1 class="title">
-				MA PASSION
-			</h1>
-			<h3>Découvrir ma vie, ce qui me motive et me passionne depuis tant d'années !</h3>
-			<div class="hero-buttons-cols">
-				<a class="download-cv" href="./portfolio/#2016">
-					<div class="download-cv-div">
-						<img style="height: 40px; margin-right: 10%;" src="./assets/icons/angles-right-solid.svg">
-						<h2 class="cv-text">Me découvrir</h2>
-					</div>
-				</a>
-			</div>
-		</div>
-
 
 	</div>
 
@@ -203,8 +152,8 @@
 		<div class="footerbox">
 			<div class="footercol">
 				<h3>Documents</h3>
-				<a href="./downloads/Kévin JAMET.vcf">Contact</a>
-				<a href="./downloads/CV - Kévin JAMET.pdf" target="_blank">Resume</a>
+				<a href="../downloads/Kévin JAMET.vcf">Contact</a>
+				<a href="../downloads/CV - Kévin JAMET.pdf" target="_blank">Resume</a>
 			</div>
 			<div class="footercol">
 				<h3>Social</h3>
