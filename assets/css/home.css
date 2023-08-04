@@ -174,7 +174,7 @@ ul{
 .hero-img{  
     height: 100%;  
     width: 100%;
-    padding: 0 0 10% 0;
+    padding: 0 0 10vh 0;
     background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.15)), url("../imgs/jkuisine-hero.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -274,7 +274,16 @@ p{
 
 .pagebody{
     background: rgb(255, 255, 255, 0.9);
+    padding: 5vh 10vw
 }
+.hero-img3 {
+    width: 25vh;
+    padding: 0 0 10% 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
 .hero-last-receipt{
     height: 50vh;
     padding: 0 10vw;
@@ -359,18 +368,62 @@ p{
     border-radius: 25px;
 }
 
+
+.receipt-list{
+    padding: 0 10vw;
+    display: flex;
+    flex-direction: column;
+}
+.receipt-details{
+    text-align: center;
+    width: 100%;
+    color: #dd6a51;
+    padding: auto;
+    display: flex;
+    flex-direction: column;
+}
+.receipt-image{
+    align-self: center;
+    padding: 10px;
+    width: 17vh;
+    border-radius: 20px;
+}
+.receipt-infos{
+    color: orange;
+    padding: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.receipt{
+    transition: 0.5s;
+    display: flex;
+    border-radius: 15px;
+    background-color: whitesmoke;
+    box-shadow: #ffd9d0 3px 3px 3px;
+}
+.receipt:hover{
+    transition: 0.5s;
+    box-shadow: #dd6a51 3px 3px 3px;
+}
+.receipt-link{
+    margin: 1vh 0;
+}
+
 .footer{
     background-color: #ffdcb9;
     display: flex;
     flex-direction: column;
 }
 .footercol a{
+    font-family: QS_Regular;
+    font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1140 - 320)));
     transition: 0.5s;
-    color: gray;
+    color: darkorange;
 }
 .footercol a:hover{
     transition: 0,5s;
-    color: #1b7eb7;
+    color: orangered;
 }
 
 
@@ -484,6 +537,16 @@ p{
     }
 
     
+    
+    .receipt{
+        display: flex;
+        flex-direction: column;
+    }
+    .receipt-infos{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
     .jkeys-div{
         text-align: left;
         margin-top: 10px;
@@ -534,7 +597,7 @@ p{
     .footercol{
         display: flex;
         flex-direction: column;
-        padding: 0 5%;
+        padding: 0 5vw;
     }
 }
 
@@ -626,6 +689,16 @@ p{
         width: 300px;
         height: 150px;
     }
+    
+    .receipt{
+        display: flex;
+        flex-direction: column;
+    }
+    .receipt-infos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
     .section{
         padding: 25px 15%;
     }
@@ -640,7 +713,7 @@ p{
     .footercol{
         display: flex;
         flex-direction: column;
-        padding: 0 10%;
+        padding: 0 5vw;
     }
 }
 
@@ -692,6 +765,10 @@ p{
         flex-direction: row;
     }
     
+    .receipt{
+        display: flex;
+        flex-direction: row;
+    }
     .jkeys-div{
         text-align: left;
         margin-top: 10px;
@@ -742,6 +819,6 @@ p{
     .footercol{
         display: flex;
         flex-direction: column;
-        padding: 0 15%;
+        padding: 0 10vw;
     }
 }

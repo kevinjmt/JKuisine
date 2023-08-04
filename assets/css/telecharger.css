@@ -223,7 +223,7 @@ p{
     font-family: 'QS_Bold', sans-serif;
     margin: 0 10px;
 }
-.download-cv-div, .download-github-div{
+.download-cv-div, .download-github-div, .download-github-div2{
     transition: 0.5s;
     justify-content: center;
     align-items: center;
@@ -233,6 +233,10 @@ p{
     border-radius: 100px;
 }
 .download-github-div{
+    background-color: whitesmoke;
+}
+.download-github-div2{
+    
     background-color: whitesmoke;
 }
 .cv-shadow:hover{
@@ -365,12 +369,14 @@ p{
     flex-direction: column;
 }
 .footercol a{
+    font-family: QS_Regular;
+    font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1140 - 320)));
     transition: 0.5s;
-    color: gray;
+    color: darkorange;
 }
 .footercol a:hover{
     transition: 0,5s;
-    color: #1b7eb7;
+    color: orangered;
 }
 
 
@@ -450,7 +456,7 @@ p{
         justify-content: center;
         text-align: center;
     }
-    .download-cv-div, .download-github-div{
+    .download-cv-div, .download-github-div, .download-github-div2{
         margin-top: 10px;
         width: 250px;
         height: 75px;
@@ -475,12 +481,6 @@ p{
     }
     .enbubble{
         margin: 25px auto;
-    }
-    .my-last-projects{
-        background: linear-gradient(90deg, rgb(234, 250, 255), white, white, white, rgb(234, 250, 255));
-    }
-    .my-portfolio, .my-contact {
-        background: linear-gradient(90deg, white, white, rgb(234, 250, 255), white, white);
     }
 
     
@@ -534,7 +534,7 @@ p{
     .footercol{
         display: flex;
         flex-direction: column;
-        padding: 0 5%;
+        padding: 0 5vw;
     }
 }
 
@@ -570,7 +570,7 @@ p{
         justify-content: center;
         text-align: center;
     }
-    .download-cv-div, .download-github-div{
+    .download-cv-div, .download-github-div, .download-github-div2{
         margin-top: 10px;
         width: 250px;
         height: 75px;
@@ -640,7 +640,7 @@ p{
     .footercol{
         display: flex;
         flex-direction: column;
-        padding: 0 10%;
+        padding: 0 5vw;
     }
 }
 
@@ -678,7 +678,7 @@ p{
     .discover-button{
         display: flex;
     }
-    .download-cv-div, .download-github-div{
+    .download-cv-div, .download-github-div, .download-github-div2{
         margin-top: 10px;
         width: 250px;
         height: 75px;
@@ -742,6 +742,6 @@ p{
     .footercol{
         display: flex;
         flex-direction: column;
-        padding: 0 15%;
+        padding: 0 10vw;
     }
 }

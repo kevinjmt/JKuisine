@@ -374,12 +374,14 @@ p{
     flex-direction: column;
 }
 .footercol a{
+    font-family: QS_Regular;
+    font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1140 - 320)));
     transition: 0.5s;
-    color: gray;
+    color: darkorange;
 }
 .footercol a:hover{
     transition: 0,5s;
-    color: #1b7eb7;
+    color: orangered;
 }
 
 
@@ -543,7 +545,7 @@ p{
     .footercol{
         display: flex;
         flex-direction: column;
-        padding: 0 5%;
+        padding: 0 5vw;
     }
 }
 
@@ -649,7 +651,7 @@ p{
     .footercol{
         display: flex;
         flex-direction: column;
-        padding: 0 10%;
+        padding: 0 5vw;
     }
 }
 
@@ -751,6 +753,6 @@ p{
     .footercol{
         display: flex;
         flex-direction: column;
-        padding: 0 15%;
+        padding: 0 10vw;
     }
 }
