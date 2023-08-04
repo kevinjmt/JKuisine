@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JKuisine - 0008 - Croque-Monsieur poêlé</title>
+	<link rel="stylesheet" href="../../assets/css/receipt.css">
+	<link rel="stylesheet" href="../../assets/css/receipts/croque_monsieur_poele.css">
+	<link rel="shortcut icon" type="image/png" href="../../assets/icons/jkuisine.png">
+	<meta name="description" content="JKuisine est un site de recettes de cuisine simples, rapides et gourmandes pour les étudiants mais pas que!">
+
+</head>
+
+<body>
+	
+	<div class="hero-img">
+		<nav>
+			<div></div>
+			<div class="jkuisinebrand">
+				<a href="../">
+					<img class="imgtitle" src="../../assets/icons/jkuisine.png" >
+				</a>
+			</div>
+			<div class="menutitles">
+				<a href="../../">🏠 Home</a>
+				<a href="../../toutes_les_recettes">🍲 Toutes les recettes</a>
+				<a class="on-mobile" href="../../telecharger">⬇️ Télécharger</a>
+				<a href="../../en_savoir_plus">En savoir plus</a>
+			</div>
+			<div class="iloveburgers" onclick="eatoneburger()">
+				<div class="ham">
+					<div class="bur">
+						<span class="ger q"></span>
+						<span class="ger w"></span>
+						<span class="ger e"></span>
+					</div>
+				</div>
+				<script>
+					document.querySelector(".ham").addEventListener("click", function(){
+						document.querySelector(".q").classList.toggle("a")
+						document.querySelector(".w").classList.toggle("b")
+						document.querySelector(".e").classList.toggle("c")
+					})
+					function eatoneburger(){
+						document.querySelector(".menutitles").classList.toggle("show");
+					}
+				</script>
+			</div>
+		</nav>
+		<div class="hero-text">			
+		
+			<div class="receipt" style="margin: 0 15vw; background-color: whitesmoke;">
+				<img class="receipt-image" src="../../assets/receipt_images/croque_monsieur.jpg" alt="">
+				<div class="receipt-details">
+					<h2>0008 - Croque-Monsieur poêlé</h2>
+					<div class="receipt-infos on-mobile">
+						<p>20-30min</p>
+						<h3>⭐⭐  </h3>
+						<h3>🪙🪙🪙  </h3>
+					</div>
+				</div>
+			</div>
+			
+
+			<div class="hero-buttons">
+				<div class="hero-buttons-cols">
+					<a class="download-cv" href="../">
+						<div class="download-cv-div cv-shadow">
+							<img style="height: 40px; margin-right: 10%;" src="../../assets/icons/arrow-left-long-solid.svg">
+							<h2 class="github-text">Retour</h2>
+						</div>
+					</a>
+					<a class="github" target="_blank" href="../../assets/downloads/receipts/0008-JKuisine-Croque Monsieur poêlé.pdf">
+						<div class="download-github-div">
+							<img style="height: 40px; margin-right: 10%;" src="../../assets/icons/file-arrow-down-solid.svg">
+							<h2 class="github-text">Télécharger</h2>
+						</div>
+					</a>
+					<a class="github on-pc" href="../../toutes_les_recettes/0008_Croque_Monsieur_poele/">
+						<div class="download-github-div">
+							<img style="height: 40px; margin-right: 10%;" src="../../assets/icons/share-nodes-solid.svg">
+							<h2 class="github-text">Partager</h2>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	<div class="pagebody">
+		
+		<div class="receipt">
+			<h1 style="margin: 50px 0;">Croque-Monsieur poêlé</h1>
+
+			<div style="background-color: #ffd9d0; height: 5px; border-radius: 10px;"></div>
+
+			<div class="receipt-key-infos" style="display: flex; flex-direction: row; justify-content: space-around;">
+				<div style="display: flex; flex-direction: column;">
+					<p><b>Pour</b> 👤👤</p>
+					<p><b>Difficulté:</b>  ⭐⭐  </p>
+					<p><b>Prix:</b>        🪙🪙🪙  </p>
+				</div>
+				<div style="display: flex; flex-direction: column;">
+					<p><b>🍱 Conservation</b></p>
+					<p>3j au réfrigérateur</p>
+					<p style="color: orangered;">♨ Peut-être réchauffé</p>
+					<p style="color: lightblue; display: none;">❄️ Peut-être congelé</p>
+				</div>
+			</div>
+
+			<div style="background-color: #ffd9d0; height: 5px; border-radius: 10px;"></div>
+
+			<div class="receipt-key-infos" style="display: flex; flex-direction: row; justify-content: left; margin-bottom: 25px;">
+				<div>
+					<p><b>Ingrédients</b></p>
+					<li>Pain de mie (tranches fines)</li>
+					<li>Gruyère râpé</li>
+					<li>Jambon</li>
+					<li>Beurre / Huile (une plaquette/
+						une demi-bouteille)</li>	
+					<li>Sauces (optionnel)</li>
+				</div>
+			</div>
+			
+			<div style="background-color: #ffd9d0; height: 5px; border-radius: 10px;"></div>
+
+			<div class="receipt-key-infos" style="display: flex; flex-direction: row; justify-content: left; margin-bottom: 25px;">
+				<div>
+					<p><b>Temps de préparation:</b></p>
+					<p>5-10min</p>
+					<p><b>Temps de repos:</b></p>
+					<p>---</p>
+					<p><b>Temps de cuisson:</b></p>
+					<p>20-30min</p>
+					<p style="margin: 25px 0;"><b>Temps total:</b></p>
+					<p>25-40min</p>
+				</div>
+			</div>
+
+			<div style="background-color: #ffd9d0; height: 5px; border-radius: 10px;"></div>
+
+			<div class="receipt-key-infos" style="display: flex; flex-direction: row; justify-content: left; margin-bottom: 25px;">
+				<div>
+					<p><b>Matériel nécessaire:</b></p>
+					<li>1 poêle (pour cuire les croques)</li>
+				</div>
+			</div>
+			
+			<div style="background-color: #ffd9d0; height: 5px; border-radius: 10px;"></div>
+
+			<div class="receipt-key-infos" style="display: flex; flex-direction: row; justify-content: left; margin-bottom: 25px;">
+				<div>		
+					<p><b>Recette:</b></p>	
+					<li>Pour commencer, mettre une tranche de 15-25g de beurre (2 cuillères à soupe) /
+						2 cuillères à soupe d’huile dans la poêle à feu maximum.</li>
+					<li>Pendant ce temps, faire le croque-monsieur à votre goût ! Pain, gruyère, jambon, sauces,
+						légumes si vous voulez !</li>
+					<li>Attendre que le beure ou l’huile soit brûlant(e) et commence à crépiter, puis mettre à feu
+						moyen la poêle et déposer le croque dans la poêle.</li>
+					<li>Attendre deux petites minutes puis retourner le croque. Attendre de nouveau 2min.</li>
+					<li>Mettre la poêle à feu très fort et attendre une petite minute jusqu’à ce que le croque
+						commence croustiller, puis retourner le croque de nouveau. (attention à ce qu’il ne crame
+						pas ! vous devez absolument vérifier de temps en temps si la face ne crame pas !)</li>
+
+					<div class="receipt" style="margin: 25px 0; padding-bottom: 25px; background-color: white">
+						<p><b>🧑‍🍳 Conseil du ptit’chef :</b></p>
+						<li>Réaliser les étapes autant de fois que nécessaire afin de rendre le fromage fondant et le
+							pain de mie croustillant sur le dessus et fondant à l’intérieur !</li>
+					</div>
+
+					<li>Servir le croque dans une assiette accompagné d’une poignée de salade ou de frites pour
+						accompagner celui-ci !</li>
+					
+				</div>
+			</div>
+
+
+		</div>
+
+	</div>
+
+
+	
+	<footer class="footer">
+		<a href="../../" style="padding-top: 5vh;">
+			<img class="imgtitle" src="../../assets/icons/jkuisine.png" >
+		</a>
+        <p style=" padding-top: 20px;">Made with ❤️ by <a target="_blank" href="https://kevinjmt.github.io/" style="color: darkorange;">KJ</a></p>
+		<div class="footerbox">
+			<div class="footercol">
+				<p>📄 Pages</p>
+				<a href="../../">🏠 Home</a>
+				<a href="../">🍲 Toutes les recettes</a>
+				<a class="on-mobile" href="../../telecharger/">⬇️ Télécharger</a>
+				<a href="../../en_savoir_plus/">📰 En savoir plus</a>
+			</div>
+			<div class="footercol">
+				<p>🔗 Liens</p>
+				<a href="https://kevinjmt.github.io/">👤 KJ</a>
+				<a href="https://github.com/kevinjmt/JKuisine">🐈‍⬛ GitHub</a>
+				<a href="../../partager/">🔗 Partager JKuisine</a>
+			</div>
+		</div>
+		
+        <p style=" padding: 20px 0;">©️ Copyright JKuisine 2023</p>
+	</footer>
+</body>
+
+</html>
