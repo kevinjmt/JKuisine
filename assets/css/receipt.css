@@ -51,7 +51,7 @@ nav{
     z-index: 1001;
 }
 li{
-    margin: 0 5vw;
+    margin: 25px 5vw;
     font-family: 'QS_Regular', sans-serif;
     font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1140 - 320)));
 }
