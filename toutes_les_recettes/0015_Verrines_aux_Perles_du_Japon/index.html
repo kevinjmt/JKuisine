@@ -83,12 +83,12 @@
 							<h2 class="github-text">Télécharger</h2>
 						</div>
 					</a>
-					<a class="github on-pc" href="./">
+					<button class="github" onclick="feur">
 						<div class="download-github-div">
 							<img style="height: 40px; margin-right: 10%;" src="../../assets/icons/share-nodes-solid.svg">
 							<h2 class="github-text">Partager</h2>
 						</div>
-					</a>
+					</button>
 				</div>
 			</div>
 		</div>
@@ -200,6 +200,14 @@
 		
         <p style=" padding: 20px 0;">©️ Copyright JKuisine 2023</p>
 	</footer>
+
+	<script>
+
+					function feur() {
+						console.log("feur");
+						navigator.clipboard.writeText(window.location.href);
+					}
+	</script>
 </body>
 
 </html>
